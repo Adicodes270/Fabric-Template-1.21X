@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "practicemod",
+	"version": "${version}",
+	"name": "Practice Mod",
+	"description": "A mod made for practicing kaupenjoe fabric course",
+	"authors": [
+		"Aditya!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/practicemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.practice.mod.PracticeMod"
+		],
+		"fabric-datagen": [
+			"net.practice.mod.PracticeModDataGenerator"
+		],
+		"client": [
+			"net.practice.mod.PracticeModClient"
+		]
+	},
+	"mixins": [
+		"practicemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
